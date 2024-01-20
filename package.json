@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "envalid": "^8.0.0",
+    "micromatch": "^4.0.5",
     "next": "14.0.4",
     "plaiceholder": "^3.0.0",
     "react": "^18",
