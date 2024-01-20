@@ -10,9 +10,8 @@ type Props = {
     page?: string | undefined,
 }
 
-export default async function Gallery({ topic = 'curated', page , }: Props) {
+export default async function Gallery({ topic = 'curated', page }: Props) {
 
- 
     let url
     if (topic === 'curated' && page) { // browsing beyond home 
         url = `https://api.pexels.com/v1/curated?page=${page}`
@@ -33,7 +32,7 @@ export default async function Gallery({ topic = 'curated', page , }: Props) {
     const { prevPage, nextPage } = getPrevNextPages(images)
 
     const footerProps = { topic, page, nextPage, prevPage }
- 
+
     return (
         <>
             <section className="px-1 my-3 grid grid-cols-gallery auto-rows-[10px]">

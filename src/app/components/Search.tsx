@@ -2,9 +2,9 @@
 
 import { useState, FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
+
 export default function Search() {
     const [search, setSearch] = useState('')
-    const [nothing , setNothing] = useState('')
     const router = useRouter()
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
